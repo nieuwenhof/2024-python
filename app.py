@@ -1,4 +1,19 @@
 import os
+
+Alunos = [ {'nome': 'Helloa', 'semestre':'1 semestre','ativo': 'True'},
+           {'nome': 'Ketlyn', 'semestre':'1 semestre','ativo': 'True'},
+           {'nome': 'Lauanny', 'semestre':'1 semestre','ativo': 'false'},
+           {'nome': 'Andrielly', 'semestre':'1 semestre','ativo': 'True'}]
+
+def exibir_subtitulo(texto):
+      os.system('cls')
+      print(texto)
+      print('')
+      
+def retorna_meu_principal():
+            input('\n Digite qualquer tecla para voltar ao menu principal')
+    
+
 def mostra_titulo():
       print("""
 
@@ -14,6 +29,7 @@ def mostra_escolhas():
       print("4. Sair da aplicação")
 
 def escolher_opcao():
+      
       opcao_escolhida = int(input('Escolha uma opção: '))
 
       print("Você escolheu a opção: ", opcao_escolhida)
